@@ -5,15 +5,8 @@ A production-ready multi-agent system using CrewAI + DeepSeek API
 
 __version__ = "1.0.0"
 
-from .core import CrewManager, get_crew_manager
-from .agents import (
-    get_agent,
-    get_agent_metadata,
-    list_available_agents,
-    AGENT_REGISTRY
-)
-from .llm import create_deepseek_llm, create_reasoning_llm, create_coding_llm
-from .memory import PersistentMemory, get_memory
+# Lazy imports to avoid requiring all dependencies upfront
+# Import specific modules as needed to avoid circular dependencies
 
 __all__ = [
     "CrewManager",

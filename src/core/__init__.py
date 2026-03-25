@@ -1,3 +1,4 @@
-from .crew_manager import CrewManager, get_crew_manager
+"""Core module for CrewAI framework."""
 
-__all__ = ["CrewManager", "get_crew_manager"]
+# Lazy imports to avoid requiring all dependencies upfront
+__all__ = ["CrewManager", "get_crew_manager", "error_handler", "task_queue"]
